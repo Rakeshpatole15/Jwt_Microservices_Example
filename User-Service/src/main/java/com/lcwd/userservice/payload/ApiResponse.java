@@ -122,7 +122,7 @@ public class ApiResponse {
 
 		public ApiResponse build() {
 
-			return new ApiResponse();
+			return new ApiResponse(message,success,status);
 
 		}
 

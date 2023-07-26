@@ -11,12 +11,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.lcwd.hotelservice.entity.Hotel;
 import com.lcwd.hotelservice.services.HotelService;
 
 @RestController
 @RequestMapping("/hotels")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class HotelController {
 	
 	@Autowired

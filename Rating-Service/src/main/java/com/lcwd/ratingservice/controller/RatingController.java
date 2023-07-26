@@ -1,5 +1,5 @@
 package com.lcwd.ratingservice.controller;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +17,7 @@ import com.lcwd.ratingservice.service.RatingService;
 
 @RestController
 @RequestMapping("/ratings")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class RatingController {
 	
 	@Autowired

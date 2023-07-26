@@ -1,5 +1,5 @@
 package com.lcwd.hotelservice.controller;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/staffs")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class StaffController {
 	
 	@GetMapping

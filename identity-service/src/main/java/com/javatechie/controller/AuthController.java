@@ -1,5 +1,5 @@
 package com.javatechie.controller;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.javatechie.dto.AuthRequest;
 import com.javatechie.entity.UserCredential;
 import com.javatechie.service.AuthService;
@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class AuthController {
     @Autowired
     private AuthService service;
